@@ -69,7 +69,10 @@
           <button class="btn btn-ghost btn-circle">
             <div class="indicator">
               <span class="material-symbols-outlined"> shopping_cart </span>
-              <span class="badge badge-xs bg-[#2B7FFF] text-white  indicator-item">10</span>
+              <span
+                class="badge badge-xs bg-[#2B7FFF] text-white indicator-item"
+                >10</span
+              >
             </div>
           </button>
           <div class="dropdown">
@@ -407,202 +410,13 @@
         <h1 class="text-center text-2xl sm:text-3xl font-semibold">
           All Products
         </h1>
-        <ul class="flex items-center justify-center gap-3 m-4 flex-wrap">
-          <li
-            class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
-          >
-            <a>Item 1</a>
-          </li>
-          <li
-            class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
-          >
-            <a>Item 1</a>
-          </li>
-          <li
-            class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
-          >
-            <a>Item 1</a>
-          </li>
-          <li
-            class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
-          >
-            <a>Item 1</a>
-          </li>
-          <li
-            class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
-          >
-            <a>Item 1</a>
-          </li>
-        </ul>
+        <ul class="flex items-center justify-center gap-3 m-4 flex-wrap"></ul>
       </div>
       <div
+        id="cardContainer"
         class="cardContainer my-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6"
       >
-        <!-- card 1 -->
         <!-- bg-[#f1f2f6] -->
-        <div
-          class="card bg-base-100 shadow-sm transition duration-300 hover:shadow-xl"
-        >
-          <figure>
-            <img
-              class="p-4 hover:scale-110 transition-transform duration-300 max-h-60 max-w-full object-contain"
-              src="./Assets/bag.png"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body p-4 gap-4">
-            <div class="card-title flex justify-between">
-              <div
-                class="text-xs border-1 px-2 border-[#dae6f8] bg-[#dae6f8] text-[#2B7FFF] rounded-full"
-              >
-                Men's clothing
-              </div>
-              <div class="text-xs text-gray-400">⭐<span>3.5</span>(156)</div>
-            </div>
-            <div class="cardBody">
-              <div class="w-100% truncate text-gray-600">
-                Opna Women's Short Sleeve Moisture
-              </div>
-              <div class="font-bold mt-1">$100</div>
-            </div>
-            <div class="flex justify-between gap-5">
-              <button
-                class="btn h-7 bg-transparent text-[#2B7FFF] border-[#2B7FFF] hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-regular fa-eye"></i>Details
-              </button>
-              <button
-                class="btn h-7 bg-[#2B7FFF] border-[#2B7FFF] text-white hover:bg-transparent hover:text-[#2B7FFF] hover:border-[#2B7FFF] transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- card 2 -->
-        <div
-          class="card bg-base-100 shadow-sm transition duration-300 hover:shadow-xl"
-        >
-          <figure>
-            <img
-              class="p-4 hover:scale-110 transition-transform duration-300 max-h-60 max-w-full object-contain"
-              src="./Assets/jacket.png"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body p-4 gap-4">
-            <div class="card-title flex justify-between">
-              <div
-                class="text-xs border-1 px-2 border-[#dae6f8] bg-[#dae6f8] text-[#2B7FFF] rounded-full"
-              >
-                Men's clothing
-              </div>
-              <div class="text-xs text-gray-400">⭐<span>3.5</span>(156)</div>
-            </div>
-            <div class="cardBody">
-              <div class="w-100% truncate text-gray-600">
-                Opna Women's Short Sleeve Moisture
-              </div>
-              <div class="font-bold mt-1">$100</div>
-            </div>
-            <div class="flex justify-between gap-5">
-              <button
-                class="btn h-7 bg-transparent text-[#2B7FFF] border-[#2B7FFF] hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-regular fa-eye"></i>Details
-              </button>
-              <button
-                class="btn h-7 bg-[#2B7FFF] border-[#2B7FFF] text-white hover:bg-transparent hover:text-[#2B7FFF] hover:border-[#2B7FFF] transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div
-          class="card bg-base-100 shadow-sm transition duration-300 hover:shadow-xl"
-        >
-          <figure>
-            <img
-              class="p-4 hover:scale-110 transition-transform duration-300 max-h-60 max-w-full object-contain"
-              src="./Assets/tshirt.png"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body p-4 gap-4">
-            <div class="card-title flex justify-between">
-              <div
-                class="text-xs border-1 px-2 border-[#dae6f8] bg-[#dae6f8] text-[#2B7FFF] rounded-full"
-              >
-                Men's clothing
-              </div>
-              <div class="text-xs text-gray-400">⭐<span>3.5</span>(156)</div>
-            </div>
-            <div class="cardBody">
-              <div class="w-100% truncate text-gray-600">
-                Opna Women's Short Sleeve Moisture
-              </div>
-              <div class="font-bold mt-1">$100</div>
-            </div>
-            <div class="flex justify-between gap-5">
-              <button
-                class="btn h-7 bg-transparent text-[#2B7FFF] border-[#2B7FFF] hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-regular fa-eye"></i>Details
-              </button>
-              <button
-                class="btn h-7 bg-[#2B7FFF] border-[#2B7FFF] text-white hover:bg-transparent hover:text-[#2B7FFF] hover:border-[#2B7FFF] transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- card 4 -->
-        <div
-          class="card bg-base-100 shadow-sm transition duration-300 hover:shadow-xl"
-        >
-          <figure>
-            <img
-              class="p-4 hover:scale-110 transition-transform duration-300 max-h-60 max-w-full object-contain"
-              src="./Assets/jacket.png"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body p-4 gap-4">
-            <div class="card-title flex justify-between">
-              <div
-                class="text-xs border-1 px-2 border-[#dae6f8] bg-[#dae6f8] text-[#2B7FFF] rounded-full"
-              >
-                Men's clothing
-              </div>
-              <div class="text-xs text-gray-400">⭐<span>3.5</span>(156)</div>
-            </div>
-            <div class="cardBody">
-              <div class="w-100% truncate text-gray-600">
-                Opna Women's Short Sleeve Moisture
-              </div>
-              <div class="font-bold mt-1">$100</div>
-            </div>
-            <div class="flex justify-between gap-5">
-              <button
-                class="btn h-7 bg-transparent text-[#2B7FFF] border-[#2B7FFF] hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-regular fa-eye"></i>Details
-              </button>
-              <button
-                class="btn h-7 bg-[#2B7FFF] border-[#2B7FFF] text-white hover:bg-transparent hover:text-[#2B7FFF] hover:border-[#2B7FFF] transition-all duration-300 text-xs flex gap-1 flex-1"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- product section end here -->
@@ -614,7 +428,8 @@
         <div class="flex flex-col sm:flex-row gap-10 items-center">
           <!-- Brand Section -->
           <div class="flex flex-col gap-6 flex-1">
-            <a class="text-2xl text-[#2B7FFF] font-bold tracking-wider flex justify-center sm:justify-start"
+            <a
+              class="text-2xl text-[#2B7FFF] font-bold tracking-wider flex justify-center sm:justify-start"
               >SwiftCart</a
             >
             <p class="text-sm leading-relaxed w-full md:w-10/12 text-justify">
