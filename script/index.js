@@ -53,14 +53,34 @@ const showProduct = (products) => {
     cardContainer.append(productCard);
   });
 };
+
 const loadCategories = () => {
   fetch("https://fakestoreapi.com/products/categories")
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => showCategories(data));
+};
+const showCategories = (categories) => {
+  const navContainer = document.getElementById("navContainer");
+  navContainer.innerHTML = "";
+  const allBtn = document.createElement("li");
+  allBtn.innerText = "All";
+  allBtn.className =
+    "border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm  active:-translate-y-1";
+  allBtn.onclick = loader;
+  navContainer.append(allBtn);
+  categories.forEach((category) => {
+    const categoryBtn = document.createElement("li");
+    categoryBtn.innerText = category;
+    categoryBtn.className =
+      "border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm  active:-translate-y-1";
+
+    navContainer.append(categoryBtn);
+  });
 };
 
-// loadCategories();
+
 loader();
+loadCategories();
 
 //  <li
 //             class="border-1 px-4 py-1 rounded-full bg-transparent text-gray-500 border-gray-600 hover:bg-[#2B7FFF] hover:text-white transition-all duration-300 text-sm"
